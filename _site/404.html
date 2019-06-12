@@ -2,7 +2,14 @@
 <html>
    
 <header id='include_header'>
+
   <title></title>
+  <style>
+    img.half {
+      height: 10%;
+      width: 20%
+    }
+  </style>
   <!-- <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" /> -->
     <link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="http://localhost:4000/assets/css/pygments.css" type="text/css" />
@@ -15,12 +22,12 @@
 
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Microsoft Research</a>
+      <img class='half' src='assets/images/ms_logo.gif' alt="Microsoft Research">
+      <!--         <a class="navbar-brand" href="index.html">Microsoft Research</a>         -->
+      <img class='half' src='assets/images/tsinghua_logo.gif' alt="Tsinghua University">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
       </button>
-
-
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -29,9 +36,11 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="https://blpeng1991.github.io/DialogueZoneDocs/">Tutorial</a>
           </li>
+          -->
           <li class="nav-item">
             <a class="nav-link" href="https://blpeng1991.github.io/DialogueZoneDocs/">Docs</a>
           </li>
@@ -55,7 +64,7 @@
     <div class="col-md-12">
 
         <h1 id="appTitle">ConvLab</h1>
-        <h2 id="appSubtitle">The multidomain diaogue toolkit</h2>
+        <h2 id="appSubtitle">The multidomain end-to-end dialog development toolkit</h2>
 
     </div>
   </div>
@@ -69,28 +78,9 @@
         <div class="infoCard">
           <div class="infoBody">
             <div class="infoHeadline">
-              <h2>What is ConvLab?</h2>
-              <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-
+              <h2>ConvLab</h2>
+              <p> ConvLab is an open-source multidomain end-to-end dialog system platform,
+                that enables researchers to quickly set up experiments with reusable components and compare a large set of different approaches, ranging from conventional pipeline systems to endto-end neural models, in common environments. </p>
             </div>
           </div>
         </div>
@@ -155,7 +145,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col one-half"> -->
-      Maintained by the Microsoft Deep Learning team
+      Maintained by the Microsoft Deep Learning Group
         <!-- <ul class="contact-list">
           <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul> -->
       <!-- </div> -->

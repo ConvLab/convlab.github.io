@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: About | Dilaogue Zone
+title: About | ConvLab
 ---
 
 # Description on the toolkit
