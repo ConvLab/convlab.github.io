@@ -5,8 +5,27 @@
   <style>
     img.half {
       height: 7%;
-      width: 15%
+      width: 15%;
+      float: left
     }
+
+    .actionBtn {
+      display: block;
+      margin: 10px auto;
+      max-width: 350px;
+      width: 100%;
+      background-color: #014779;
+      color: #fff !important;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 600;
+      border: 2px solid #003459;
+      border-radius: 20px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    .actionBtn:hover {background:#003459;}
+
   </style>
   <!-- <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" /> -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.css" type="text/css" />
@@ -20,14 +39,20 @@
 
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container">
-      <img class='half' src='assets/images/msr_transparent.png' alt="Microsoft Research">
+        <!-- <div class="left"></div> -->
+        <!-- <div class="right"></div> -->
+      <!-- <div class='hh'> -->
+      <img class='half' src='assets/images/msr_chop.png' alt="Microsoft Research">
+      <!-- </div> -->
       <!--         <a class="navbar-brand" href="index.html">Microsoft Research</a>         -->
+      <!-- <div class='hh'> -->
       <img class='half' src='assets/images/tsinghua_transparent.png' alt="Tsinghua University">
+      <!-- </div> -->
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto"?>
           <li class="nav-item">
             <a class="nav-link" href="index.html"></a>
           {% comment %} </li>

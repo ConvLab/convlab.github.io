@@ -7,8 +7,8 @@
   <div class="row">
     <div class="col-md-12">
 
-        <h1 id="appTitle">ConvLab</h1>
-        <h2 id="appSubtitle"> DSTC8 Track 1: Multi-domain End-to-End Dialog Challenge</h2>
+        <h1 id="appTitle"><font size='+8'> ConvLab</font> </h1>
+        <h2 id="appSubtitle"> <font size='+2'> DSTC8 Track 1: Multi-Domain End-to-End Dialog Challenge </font></h2>
 
     </div>
   </div>
@@ -18,24 +18,30 @@
 <div class="cover" id="contentCover">
   <div class="container">
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-13">
         <div class="infoCard">
           <div class="infoBody">
             <div class="infoHeadline">
-              <h2>ConvLab</h2>
+              <h2><a href="https://github.com/ConvLab/ConvLab" style="color: #023b5c""> ConvLab </a></h2>
               <p> ConvLab is an open-source multidomain end-to-end dialog system platform,
                 that enables researchers to quickly set up experiments with reusable components and compare a large set of different approaches, ranging from conventional pipeline systems to endto-end neural models, in common environments. </p>
             </div>
+            <button class="btn2 actionBtn" onclick="location.href='https://github.com/ConvLab/ConvLab'" type="button">
+              ConvLab GitHub</button>
+            <button class="btn2 actionBtn" onclick="location.href='https://arxiv.org/abs/1904.08637'" type="button">
+                ConvLab Paper</button>
           </div>
         </div>
         </div>
-        <div class="col-md-7">
+      </div>
+      <div class="row">
+        <div class="col-md-13">
             <div class="infoCard">
               <div class="infoBody">
                 <div class="infoHeadline">
-                  <h2>Leaderboard</h2>
+                  <h2>Automatic Evaluation Leaderboard</h2>
                 </div>
-                <table class="table borderless performance">
+                <!-- <table class="table borderless performance">
                   <tbody>
                     <tr>
                       <th>Rank</th>
@@ -58,7 +64,42 @@
                     <tr>
                       {% endfor %}
                   </tbody>
-                </table>
+                </table> -->
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Team</th>
+                        <th>Submission ID</th>
+                        <th>Spec</th>
+                        <th>Success Rate</th>
+                        <th>Return</th>
+                        <th>Turns</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1</th>
+                        <th>Book Rate</th>
+                      </tr>
+                      {% for res in site.data.autoeval %}
+                      <tr>
+                        <td>{{res.Rank}}  </td>
+                        <td> {{res.Team}} </td>
+                        <td> {{res.SubmissionID}} </td>
+                        <td> {{res.Spec}} </td>
+                        <td>{{res.SuccessRate}}  </td>
+                        <td> {{res.Return}} </td>
+                        <td> {{res.Turns}} </td>
+                        <td> {{res.Precision}} </td>
+                        <td>{{res.Recall}}  </td>
+                        <td> {{res.F1}} </td>
+                        <td> {{res.BookRate}} </td>
+                      <tr>
+                        {% endfor %}
+                    </tbody>
+                  </table>
+
+
+
               </div>
             </div>
           </div>
