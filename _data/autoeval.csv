@@ -4,7 +4,7 @@ Rank,Team,SubmissionID,Spec,SuccessRate,Return,Turns,Precision,Recall,F1,BookRat
 3,leo1020,504651,bert_rl_hdsa,82.20%,54.09,6.55,0.71,0.92,0.78,94.56%
 4,sangmuk,504641,submission4,80.60%,51.51,7.21,0.78,0.89,0.81,86.45%
 5,Donghoon,504430,submission1,79.40%,49.69,7.59,0.8,0.89,0.83,87.02%
-N/A,Baseline,N/A,MILU_rule_rule_template,74.40%,43.79,7.49,0.76,0.87,0.79,85.63%
+N/A,Baseline,N/A,MILU_rule_rule_template,63.40%,30.41,7.67,0.72,0.83,0.75,86.37%
 6,zehaolin,504529,submission1,58.00%,23.7,7.9,0.61,0.73,0.64,75.71%
 7,changsongJo,504666,milu_rule_bqn_template,56.60%,20.14,9.78,0.68,0.77,0.7,58.63%
 8,PhilJohnG,504502,submission1,55.20%,17.18,11.06,0.73,0.74,0.71,71.87%
