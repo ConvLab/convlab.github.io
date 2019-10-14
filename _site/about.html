@@ -8,7 +8,12 @@
     img.half {
       height: 7%;
       width: 15%;
-      float: left
+      float: left;
+    }
+    img.half2 {
+      height: 7%;
+      width: 15%;
+      float: right;
     }
 
     .actionBtn {
@@ -16,16 +21,20 @@
       margin: 10px auto;
       max-width: 350px;
       width: 100%;
-      background-color: #014779;
+      
+      
+      background: #00a3a3;
       color: #fff !important;
       text-align: center;
       font-size: 1em;
       font-weight: 600;
-      border: 2px solid #003459;
+      
+      border: 2px solid #00a3a3;
       border-radius: 20px;
       transition: all 0.5s;
       white-space: normal;
     }
+    
     .actionBtn:hover {background:#003459;}
 
   </style>
@@ -44,29 +53,31 @@
         <!-- <div class="left"></div> -->
         <!-- <div class="right"></div> -->
       <!-- <div class='hh'> -->
-      <img class='half' src='assets/images/msr_chop.png' alt="Microsoft Research">
       <!-- </div> -->
       <!--         <a class="navbar-brand" href="index.html">Microsoft Research</a>         -->
       <!-- <div class='hh'> -->
-      <img class='half' src='assets/images/tsinghua_transparent.png' alt="Tsinghua University">
-      <!-- </div> -->
+          <!-- <div class="half" style="float: right;"><img src="assets/images/msr_chop.png"  /></div> 
+          <div class="half" style="float: left;"><img src="assets/images/tsinghua_transparent.png" /></div> 
+       -->
+      <img class='half' src='assets/images/msr_chop.png' alt="Microsoft Research">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <img class='half2' src='assets/images/tsinghua_transparent.png' alt="Tsinghua University">
+      <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto"?>
           <li class="nav-item">
             <a class="nav-link" href="index.html"></a>
-          
+           -->
           <!--
           <li class="nav-item">
             <a class="nav-link" href="https://blpeng1991.github.io/DialogueZoneDocs/">Tutorial</a>
           </li>
           -->
+          <!--  -->
           
-          
-        </ul>
-      </div>
+        <!-- </ul>
+      </div> -->
     </div>
   </nav>
 </header>
@@ -173,7 +184,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col one-half"> -->
-      Maintained by Microsoft Research AI, Deep Learning Group
+     <font color='white'> Maintained by Microsoft Research AI, Deep Learning Group </font>
         <!-- <ul class="contact-list">
           <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul> -->
       <!-- </div> -->

@@ -1059,10 +1059,6 @@ pre code {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .col-md-13 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
   .order-md-first {
     -ms-flex-order: -1;
     order: -1;
@@ -1555,6 +1551,7 @@ pre code {
 .table-borderless thead th,
 .table-borderless tbody + tbody {
   border: 0;
+  display: inline-block;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {

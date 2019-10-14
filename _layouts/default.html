@@ -8,7 +8,7 @@
     <div class="col-md-12">
 
         <h1 id="appTitle"><font size='+8'> ConvLab</font> </h1>
-        <h2 id="appSubtitle"> <font size='+2'> DSTC8 Track 1: Multi-Domain End-to-End Dialog Challenge </font></h2>
+        <h2 id="appSubtitle"> <font size='+2'> DSTC8 Track 1: End-to-End Multi-Domain Dialog Challenge </font></h2>
 
     </div>
   </div>
@@ -18,13 +18,13 @@
 <div class="cover" id="contentCover">
   <div class="container">
     <div class="row">
-      <div class="col-md-13">
+      <div class="col-md-12">
         <div class="infoCard">
           <div class="infoBody">
             <div class="infoHeadline">
               <h2><a href="https://github.com/ConvLab/ConvLab" style="color: #023b5c""> ConvLab </a></h2>
               <p> ConvLab is an open-source multidomain end-to-end dialog system platform,
-                that enables researchers to quickly set up experiments with reusable components and compare a large set of different approaches, ranging from conventional pipeline systems to endto-end neural models, in common environments. </p>
+                that enables researchers to quickly set up experiments with reusable components and compare a large set of different approaches, ranging from conventional pipeline systems to end-to-end neural models, in common environments. </p>
             </div>
             <button class="btn2 actionBtn" onclick="location.href='https://github.com/ConvLab/ConvLab'" type="button">
               ConvLab GitHub</button>
@@ -32,10 +32,25 @@
                 ConvLab Paper</button>
           </div>
         </div>
+        {% comment %} </div> {% endcomment %}
+      {% comment %} <div class="col-md-6"> {% endcomment %}
+        <div class="infoCard">
+          <div class="infoBody">
+            <div class="infoHeadline">
+              <h2><a href="https://competitions.codalab.org/competitions/20162" style="color: #023b5c""> DSTC8 Track 1: End-to-End Multi-Domain Dialog Challenge </a></h2>
+              <p> As part of DSTC8, Microsoft Research and Tsinghua University are hosting a track intended to foster progress in building complex bots span over multiple sub-domains to accomplish a complex user goal.  To advance state-of-the-art technologies for handling complex dialogs, we offer a timely task focusing on multi-domain end-to-end task completion dialog in travel planning settings.</div>
+            <button class="btn2 actionBtn" onclick="location.href='https://competitions.codalab.org/competitions/20162'" type="button">
+              Challenge hosted at CodaLab </button>
+           <p>Automatic Evaluation: We report the best submission result based on success rate for each team. </p>
+          {% comment %} <p>Human Evaluation: </p> {% endcomment %}
+          </div>
+        </div>
         </div>
       </div>
+
+
       <div class="row">
-        <div class="col-md-13">
+        <div class="col-md-12">
             <div class="infoCard">
               <div class="infoBody">
                 <div class="infoHeadline">
@@ -66,38 +81,53 @@
                   </tbody>
                 </table> -->
                 <table class="table borderless performance">
+                {% comment %} <table class="table-test"> {% endcomment %}
+
                     <tbody>
                       <tr>
                         <th>Rank</th>
-                        <th>Team</th>
-                        <th>Submission ID</th>
-                        <th>Spec</th>
-                        <th>Success Rate</th>
-                        <th>Return</th>
-                        <th>Turns</th>
-                        <th>Precision</th>
-                        <th>Recall</th>
-                        <th>F1</th>
-                        <th>Book Rate</th>
+                        <th class="extracol">Team</th>
+                        <th class="extracol">Submission ID</th>
+                        <th class="extracol">Spec</th>
+                        <th class="extracol">Success Rate</th>
+                        <th class="extracol">Return</th>
+                        <th class="extracol">Turns</th>
+                        <th class="extracol">Precision</th>
+                        <th class="extracol">Recall</th>
+                        <th class="extracol"> F1</th>
+                        <th class="extracol">Book Rate</th>
                       </tr>
                       {% for res in site.data.autoeval %}
                       <tr>
                         <td>{{res.Rank}}  </td>
-                        <td> {{res.Team}} </td>
-                        <td> {{res.SubmissionID}} </td>
-                        <td> {{res.Spec}} </td>
-                        <td>{{res.SuccessRate}}  </td>
-                        <td> {{res.Return}} </td>
-                        <td> {{res.Turns}} </td>
-                        <td> {{res.Precision}} </td>
-                        <td>{{res.Recall}}  </td>
-                        <td> {{res.F1}} </td>
-                        <td> {{res.BookRate}} </td>
+                        <td class="extracol"> {{res.Team}} </td>
+                        <td class="extracol"> {{res.SubmissionID}} </td>
+                        <td class="extracol"> {{res.Spec}} </td>
+                        <td class="extracol">{{res.SuccessRate}}  </td>
+                        <td class="extracol"> {{res.Return}} </td>
+                        <td class="extracol"> {{res.Turns}} </td>
+                        <td class="extracol"> {{res.Precision}} </td>
+                        <td class="extracol">{{res.Recall}}  </td>
+                        <td class="extracol"> {{res.F1}} </td>
+                        <td class="extracol"> {{res.BookRate}} </td>
                       <tr>
                         {% endfor %}
                     </tbody>
                   </table>
-
+               {% comment %} <script>
+if ($(window).width() < 750) {    
+  $('th.extracol').each(function(i, item) {
+        var row = $(item).clone(true).prop('colspan','2').wrapAll('<tr />');
+        $(item).closest('tr').after(row);
+        $(item).remove();
+    });
+    $('td.extracol').each(function(i, item) {
+        var row = $(item).clone(true).prop('colspan','2').wrapAll('<tr />');
+        $(item).closest('tr').after(row);
+        $(item).remove();
+    });
+}
+               </script> {% endcomment %}
 
 
               </div>
