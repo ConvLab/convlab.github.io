@@ -223,6 +223,10 @@
   .infoCard .infoBody {
     padding: 30px;
   }
+  .infoCard .infoBodyScroll {
+    padding: 30px;
+    overflow-x: scroll;
+  }
   .infoCard .infoBody >.infoHeadline {
     margin: 15px 0px;
   }

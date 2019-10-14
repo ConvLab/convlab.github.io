@@ -1551,7 +1551,6 @@ pre code {
 .table-borderless thead th,
 .table-borderless tbody + tbody {
   border: 0;
-  display: inline-block;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
