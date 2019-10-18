@@ -40,14 +40,55 @@
               <h2><a href="https://competitions.codalab.org/competitions/20162" style="color: #023b5c""> DSTC8 Track 1: End-to-End Multi-Domain Dialog Challenge </a></h2>
               <p> As part of DSTC8, Microsoft Research and Tsinghua University are hosting a track intended to foster progress in building complex bots span over multiple sub-domains to accomplish a complex user goal.  To advance state-of-the-art technologies for handling complex dialogs, we offer a timely task focusing on multi-domain end-to-end task completion dialog in travel planning settings.</div>
             <button class="btn2 actionBtn" onclick="location.href='https://competitions.codalab.org/competitions/20162'" type="button">
-              Dialog Challenge @CodaLab </button>
-           <p>Automatic Evaluation: We report each team's best submission result based on success rate. </p>
+              Dialog Challenge @ CodaLab </button>
+           <h5>Evaluation</h5>
+           <li>We report each team's best submission result based on success rate for both automatic evaluation and human evaluation. </li> 
+           <li>Human evaluation leaderboard is considered as the final ranking.</li>
           {% comment %} <p>Human Evaluation: </p> {% endcomment %}
           </div>
         </div>
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBodyScroll">
+                <div class="infoHeadline">
+                  <h2>Human Evaluation Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Team</th>
+                        <th>Submission ID</th>
+                        <th>Spec #</th>
+                        <th>Success Rate</th>
+                        <th>Language Understanding Score</th>
+                        <th>Response Appropriateness Score</th>
+                        <th>Turns</th>
+                      </tr>
+                      {% for res in site.data.humaneval %}
+                      <tr>
+                        <td>{{res.Rank}}  </td>
+                        <td> {{res.Team}} </td>
+                        <td> {{res.SubmissionID}} </td>
+                        <td> {{res.Spec}} </td>
+                        <td>{{res.SuccessRate}}  </td>
+                        <td> {{res.LUScore}} </td>
+                        <td> {{res.RAScore}} </td>
+                        <td> {{res.Turns}} </td>
+                      <tr>
+                        {% endfor %}
+                    </tbody>
+                  </table>
+
+
+              </div>
+            </div>
+          </div>
+      </div>
 
       <div class="row">
         <div class="col-md-12">
@@ -62,7 +103,7 @@
                         <th>Rank</th>
                         <th>Team</th>
                         <th>Submission ID</th>
-                        <th>Spec</th>
+                        <th>Spec #</th>
                         <th>Success Rate</th>
                         <th>Return</th>
                         <th>Turns</th>
@@ -88,7 +129,7 @@
                         {% endfor %}
                     </tbody>
                   </table>
-               {% comment %} <script>
+               <!-- {% comment %} <script>
 if ($(window).width() < 750) {    
   $('th.extracol').each(function(i, item) {
         var row = $(item).clone(true).prop('colspan','2').wrapAll('<tr />');
@@ -101,7 +142,7 @@ if ($(window).width() < 750) {
         $(item).remove();
     });
 }
-               </script> {% endcomment %}
+               </script> {% endcomment %} -->
 
 
               </div>

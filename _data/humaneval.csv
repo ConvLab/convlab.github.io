@@ -1,0 +1,13 @@
+Rank,Team,SubmissionID,Spec,SuccessRate,LUScore,RAScore,Turns
+1,Donghoon,504430,submission4,68.32%,4.149,4.287,19.507
+2,pa_dstc8,504429,submission1,65.81%,3.538,3.632,15.481
+3,miao,504563,submission2,65.09%,3.538,3.84,13.884
+4,leo1020,504651,submission1,64.10%,3.547,3.829,16.906
+5,sangmuk,504641,submission2,62.91%,3.742,3.815,14.968
+6,hwaranlee,504569,submission4,54.90%,3.784,3.824,14.107
+7,zehaolin,504529,submission1,43.56%,3.554,3.446,21.818
+8,c071132,504582,submission2,36.45%,2.944,3.103,21.128
+9,changsongJo,504666,submission1,25.77%,2.072,2.258,16.8
+10,PhilJohnG,504502,submission2,23.30%,2.612,2.65,15.333
+11,fangh06,504524,submission1,18.81%,1.99,2.059,16.105
+N/A,Baseline,N/A,milu_rule_rule_template,56.45%,3.097,3.556,17.543
