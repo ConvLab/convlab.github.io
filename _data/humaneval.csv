@@ -10,4 +10,4 @@ Rank,Team,SubmissionID,Spec,SuccessRate,LUScore,RAScore,Turns
 9,changsongJo,504666,submission1,25.77%,2.072,2.258,16.8
 10,PhilJohnG,504502,submission2,23.30%,2.612,2.65,15.333
 11,fangh06,504524,submission1,18.81%,1.99,2.059,16.105
-N/A,Baseline,N/A,milu_rule_rule_template,56.45%,3.097,3.556,17.543
+N/A,Baseline,Baseline,milu_rule_rule_template,56.45%,3.097,3.556,17.543
