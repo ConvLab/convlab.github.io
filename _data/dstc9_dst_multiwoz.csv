@@ -1,0 +1,4 @@
+Rank,TeamID,BestSpec,JointAccuracy,SlotAccuracy,PRF1
+1,1,Submission1,62.37,98.09,92.15/94.02/93.07
+2,2,Submission2,62.09,98.1,90.61/96.2/93.32
+3,3,Submission3,30.58,94.44,87.3/74.87/80.61
