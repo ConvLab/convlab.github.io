@@ -35,6 +35,27 @@
     {% comment %} .actionBtn:hover {background:#003459;} {% endcomment %}
     .actionBtn:hover {background:#003459;}
 
+    .actionBtn2 {
+      display: block;
+      margin: 10px auto;
+      max-width: 250px;
+      width: 100%;
+      {% comment %} background-color: #014779; {% endcomment %}
+      {% comment %} background-color: rgb(2, 0, 19); {% endcomment %}
+      background: rgb(0, 128, 128);
+      color: #fff !important;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      {% comment %} border: 2px solid #003459; {% endcomment %}
+      border: 1px solid rgb(0, 128, 128);
+      border-radius: 10px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    {% comment %} .actionBtn2:hover {background:#003459;} {% endcomment %}
+    .actionBtn2:hover {background:#003459;}
+
   </style>
   <!-- <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" /> -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.css" type="text/css" />
@@ -61,6 +82,10 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
+      <button class="btn2 actionBtn2" onclick="location.href='index.html'" type="button">
+        DSTC9</button>
+      <button class="btn2 actionBtn2" onclick="location.href='about.html'" type="button">
+          DSTC8</button>
       <img class='half2' src='assets/images/tsinghua_transparent.png' alt="Tsinghua University">
       <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto"?>

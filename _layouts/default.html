@@ -6,10 +6,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-
-        <h1 id="appTitle"><font size='+8'> ConvLab</font> </h1>
-        <h2 id="appSubtitle"> <font size='+2'> DSTC8 Track 1: End-to-End Multi-Domain Dialog Challenge </font></h2>
-
+      <h1 id="appTitle"><font size='+8'> ConvLab-2</font> </h1>
+      <h2 id="appSubtitle"> <font size='+2'> DSTC9 Track 2: Multi-domain Task-oriented Dialog Challenge II </font></h2>
     </div>
   </div>
 </div>
@@ -22,14 +20,12 @@
         <div class="infoCard">
           <div class="infoBody">
             <div class="infoHeadline">
-              <h2><a href="https://github.com/ConvLab/ConvLab" style="color: #023b5c""> ConvLab </a></h2>
-              <p> ConvLab is an open-source multidomain end-to-end dialog system platform,
-                that enables researchers to quickly set up experiments with reusable components and compare a large set of different approaches, ranging from conventional pipeline systems to end-to-end neural models, in common environments. </p>
-            </div>
-            <button class="btn2 actionBtn" onclick="location.href='https://github.com/ConvLab/ConvLab'" type="button">
-              ConvLab GitHub</button>
-            <button class="btn2 actionBtn" onclick="location.href='https://arxiv.org/abs/1904.08637'" type="button">
-                ConvLab Paper</button>
+              <h3><a href="https://github.com/ConvLab/ConvLab-2" style="color: #023b5c""> ConvLab-2 </a></h3>
+              <p> ConvLab-2 is an open-source toolkit that enables researchers to build task-oriented dialog systems with state-of-the-art models, perform an end-to-end evaluation, and diagnose the weakness of systems. As the successor of ConvLab, ConvLab-2 inherits ConvLab's framework but integrates more powerful dialog models and supports more datasets.            </div>
+            <button class="btn2 actionBtn" onclick="location.href='https://github.com/thu-coai/Convlab-2'" type="button">
+              ConvLab-2 Code</button>
+            <button class="btn2 actionBtn" onclick="location.href='https://arxiv.org/abs/2002.04793'" type="button">
+                ConvLab-2 Paper</button>
           </div>
         </div>
         {% comment %} </div> {% endcomment %}
@@ -37,15 +33,13 @@
         <div class="infoCard">
           <div class="infoBody">
             <div class="infoHeadline">
-              <h2><a href="https://competitions.codalab.org/competitions/20162" style="color: #023b5c""> DSTC8 Track 1: End-to-End Multi-Domain Dialog Challenge </a></h2>
-              <p> As part of DSTC8, Microsoft Research and Tsinghua University are hosting a track intended to foster progress in building complex bots span over multiple sub-domains to accomplish a complex user goal.  To advance state-of-the-art technologies for handling complex dialogs, we offer a timely task focusing on multi-domain end-to-end task completion dialog in travel planning settings.</div>
-            <button class="btn2 actionBtn" onclick="location.href='https://competitions.codalab.org/competitions/20162'" type="button">
-              Dialog Challenge @ CodaLab </button>
-           <h5>Evaluation</h5>
-           <li>We report each team's best submission result based on success rate for both automatic evaluation and human evaluation. </li>
-           <li>Team Submission ID is the ID CodaLab provided when you made the submission.</li> 
-           <li>Human evaluation leaderboard is considered as the final ranking.</li>
-          {% comment %} <p>Human Evaluation: </p> {% endcomment %}
+              <h3><a href="https://github.com/ConvLab/ConvLab-2" style="color: #023b5c""> DSTC9 Track 2: Multi-domain Task-oriented Dialog Challenge II </a></h3>
+              <p> As part of DSTC9, Microsoft Research and Tsinghua University are hosting Multi-domain Task-oriented Dialog Challenge II, aiming to solve two tasks in the multi-domain task completion setting: 
+                 i) End-to-end Multi-domain Task Completion Dialog,
+                 ii) Cross-lingual Multi-domain Dialog State Tracking. </div>
+            <button class="btn2 actionBtn" onclick="location.href='https://github.com/ConvLab/ConvLab-2'" type="button">
+              Dialog Challenge Page </button>
+          {% comment %} <p>E2E Task Human Evaluation: </p> {% endcomment %}
           </div>
         </div>
         </div>
@@ -56,45 +50,49 @@
             <div class="infoCard">
               <div class="infoBodyScroll">
                 <div class="infoHeadline">
+                  <h3>End-to-end Multi-domain Task Completion Dialog Task</h3>
+                  <br />
                   <h2>Human Evaluation Leaderboard</h2>
                 </div>
                 <table class="table borderless performance">
                     <tbody>
                       <tr>
                         <th>Rank</th>
-                        <!-- <th>Team</th> -->
-                        <th>Team Submission ID</th>
-                        <th>Spec #</th>
-                        <th>Success Rate</th>
+                        <th>Team ID</th>
+                        <th>Best Spec #</th>
+                        <th>Average Success Rate</th>
+                        <th>Success Rate w/ DB Grounding</th>
+                        <th>Success Rate w/o DB Grounding</th>
                         <th>Language Understanding Score</th>
                         <th>Response Appropriateness Score</th>
                         <th>Turns</th>
                       </tr>
-                      {% for res in site.data.humaneval %}
+                      {% for res in site.data.dstc9_e2e_humaneval %}
                       <tr>
                         <td>{{res.Rank}}  </td>
-                        <!-- <td> {{res.Team}} </td> -->
-                        <td> {{res.SubmissionID}} </td>
-                        <td> {{res.Spec}} </td>
-                        <td>{{res.SuccessRate}}  </td>
-                        <td> {{res.LUScore}} </td>
-                        <td> {{res.RAScore}} </td>
+                        <td> {{res.TeamID}} </td>
+                        <td> {{res.BestSpec}} </td>
+                        <td>{{res.AverageSuccess}}  </td>
+                        <td>{{res.SuccesswGrounding}}  </td>
+                        <td>{{res.SuccesswoGrounding}}  </td>
+                        <td> {{res.UnderstandingScore}} </td>
+                        <td> {{res.AppropriatenessScore}} </td>
                         <td> {{res.Turns}} </td>
                       <tr>
                         {% endfor %}
                     </tbody>
                   </table>
+                  <b> (Team 1 & Team 2 cochampion)</b>
 
-
-              </div>
+              <!-- </div>
             </div>
           </div>
-      </div>
-
-      <div class="row">
+      </div> -->
+      <br /> <br />
+      <!-- <div class="row">
         <div class="col-md-12">
             <div class="infoCard">
-              <div class="infoBodyScroll">
+              <div class="infoBodyScroll"> -->
                 <div class="infoHeadline">
                   <h2>Automatic Evaluation Leaderboard</h2>
                 </div>
@@ -103,53 +101,120 @@
                       <tr>
                         <th>Rank</th>
                         <!-- <th>Team</th> -->
-                        <th>Team Submission ID</th>
-                        <th>Spec #</th>
+                        <th>Team ID</th>
+                        <th>Best Spec #</th>
                         <th>Success Rate</th>
-                        <th>Return</th>
-                        <th>Turns</th>
-                        <th>Precision</th>
-                        <th>Recall</th>
-                        <th> F1</th>
+                        <th>Complete Rate</th>
                         <th>Book Rate</th>
+                        <th>Inform P/R/F1</th>
+                        <th>Turn(succ/all)</th>
                       </tr>
-                      {% for res in site.data.autoeval %}
+                      {% for res in site.data.dstc9_e2e_autoeval %}
                       <tr>
                         <td>{{res.Rank}}  </td>
                         <!-- <td> {{res.Team}} </td> -->
-                        <td> {{res.SubmissionID}} </td>
-                        <td> {{res.Spec}} </td>
+                        <td> {{res.TeamID}} </td>
+                        <td> {{res.BestSpec}} </td>
                         <td>{{res.SuccessRate}}  </td>
-                        <td> {{res.Return}} </td>
-                        <td> {{res.Turns}} </td>
-                        <td> {{res.Precision}} </td>
-                        <td>{{res.Recall}}  </td>
-                        <td> {{res.F1}} </td>
+                        <td> {{res.CompleteRate}} </td>
                         <td> {{res.BookRate}} </td>
+                        <td> {{res.InformPRF1}} </td>
+                        <td>{{res.TurnSuccAll}}  </td>
                       <tr>
                         {% endfor %}
                     </tbody>
                   </table>
-               <!-- {% comment %} <script>
-if ($(window).width() < 750) {    
-  $('th.extracol').each(function(i, item) {
-        var row = $(item).clone(true).prop('colspan','2').wrapAll('<tr />');
-        $(item).closest('tr').after(row);
-        $(item).remove();
-    });
-    $('td.extracol').each(function(i, item) {
-        var row = $(item).clone(true).prop('colspan','2').wrapAll('<tr />');
-        $(item).closest('tr').after(row);
-        $(item).remove();
-    });
-}
-               </script> {% endcomment %} -->
+              </div>
+            </div>
+          </div>
+      </div>
 
+
+
+
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBodyScroll">
+
+                <div class="infoHeadline">
+                  <h3>Cross-lingual Multi-domain Dialog State Tracking Task</h3>
+
+                  <li>The reported numbers are the average of evaluation results for the public test set and private test set.</li> 
+                  <li>The joint accuracy for each test set is also listed.</li>
+                  <br />
+
+                  <h2>MultiWOZ Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Team ID</th>
+                        <th>Best Spec #</th>
+                        <th>Joint Accuracy</th>
+                        <th>Slot Accuracy</th>
+                        <th>P/R/F1</th>
+                        <th>Joint Accuracy (public)</th>
+                        <th>Joint Accuracy (private)</th>
+                      </tr>
+                      {% for res in site.data.dstc9_dst_multiwoz %}
+                      <tr>
+                        <td>{{res.Rank}}  </td>
+                        <!-- <td> {{res.Team}} </td> -->
+                        <td> {{res.TeamID}} </td>
+                        <td> {{res.BestSpec}} </td>
+                        <td>{{res.JointAccuracy}}  </td>
+                        <td> {{res.SlotAccuracy}} </td>
+                        <td> {{res.PRF1}} </td>
+                        <td>{{res.JointAccuracyPublic}}  </td>
+                        <td>{{res.JointAccuracyPrivate}}  </td>
+                      <tr>
+                        {% endfor %}
+                    </tbody>
+                  </table>
+                  <br />
+
+
+                  <div class="infoHeadline">
+                    <h2>CrossWOZ Leaderboard</h2>
+                  </div>
+                  <table class="table borderless performance">
+                      <tbody>
+                        <tr>
+                          <th>Rank</th>
+                          <th>Team ID</th>
+                          <th>Best Spec #</th>
+                          <th>Joint Accuracy</th>
+                          <th>Slot Accuracy</th>
+                          <th>P/R/F1</th>
+                          <th>Joint Accuracy (public)</th>
+                          <th>Joint Accuracy (private)</th>
+                        </tr>
+                        {% for res in site.data.dstc9_dst_crosswoz %}
+                        <tr>
+                          <td>{{res.Rank}}  </td>
+                          <!-- <td> {{res.Team}} </td> -->
+                          <td> {{res.TeamID}} </td>
+                          <td> {{res.BestSpec}} </td>
+                          <td>{{res.JointAccuracy}}  </td>
+                          <td> {{res.SlotAccuracy}} </td>
+                          <td> {{res.PRF1}} </td>
+                          <td>{{res.JointAccuracyPublic}}  </td>
+                          <td>{{res.JointAccuracyPrivate}}  </td>
+                        <tr>
+                          {% endfor %}
+                      </tbody>
+                    </table>
 
               </div>
             </div>
           </div>
       </div>
+
+
+
     </div>
     </div>
   </body>
