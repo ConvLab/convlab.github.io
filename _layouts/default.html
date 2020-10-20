@@ -82,7 +82,7 @@
                         {% endfor %}
                     </tbody>
                   </table>
-                  <b> Note: Team 1 & Team 2 cochampion</b>
+                  <b> (Team 1 & Team 2 cochampion)</b>
 
               <!-- </div>
             </div>
@@ -140,7 +140,11 @@
 
                 <div class="infoHeadline">
                   <h3>Cross-lingual Multi-domain Dialog State Tracking Task</h3>
+
+                  <li>The reported numbers are the average of evaluation results for the public test set and private test set.</li> 
+                  <li>The joint accuracy for each test set is also listed.</li>
                   <br />
+
                   <h2>MultiWOZ Leaderboard</h2>
                 </div>
                 <table class="table borderless performance">
@@ -152,6 +156,8 @@
                         <th>Joint Accuracy</th>
                         <th>Slot Accuracy</th>
                         <th>P/R/F1</th>
+                        <th>Joint Accuracy (public)</th>
+                        <th>Joint Accuracy (private)</th>
                       </tr>
                       {% for res in site.data.dstc9_dst_multiwoz %}
                       <tr>
@@ -162,6 +168,8 @@
                         <td>{{res.JointAccuracy}}  </td>
                         <td> {{res.SlotAccuracy}} </td>
                         <td> {{res.PRF1}} </td>
+                        <td>{{res.JointAccuracyPublic}}  </td>
+                        <td>{{res.JointAccuracyPrivate}}  </td>
                       <tr>
                         {% endfor %}
                     </tbody>
@@ -181,6 +189,8 @@
                           <th>Joint Accuracy</th>
                           <th>Slot Accuracy</th>
                           <th>P/R/F1</th>
+                          <th>Joint Accuracy (public)</th>
+                          <th>Joint Accuracy (private)</th>
                         </tr>
                         {% for res in site.data.dstc9_dst_crosswoz %}
                         <tr>
@@ -191,11 +201,12 @@
                           <td>{{res.JointAccuracy}}  </td>
                           <td> {{res.SlotAccuracy}} </td>
                           <td> {{res.PRF1}} </td>
+                          <td>{{res.JointAccuracyPublic}}  </td>
+                          <td>{{res.JointAccuracyPrivate}}  </td>
                         <tr>
                           {% endfor %}
                       </tbody>
                     </table>
-
 
               </div>
             </div>
