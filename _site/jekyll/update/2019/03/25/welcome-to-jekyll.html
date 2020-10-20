@@ -300,12 +300,19 @@
                     </tbody>
                   </table>
                   <b> (Team 1 & Team 2 cochampion)</b>
-
+                  <li>Average Success = (Success Rate w/ DB Grounding + Success Rate w/o DB Grounding) / 2</li>
+                  <li>Success Rate w/o DB Grounding: Annotation provided by MTurkers (Success or Fail)</li> 
+                  <li>Success Rate w/ DB Grounding: It is a success if and only if 
+                    <ul>
+                      <li> MTurkers mark the dialog as `Success` </li>
+                      <li>The provided `request` slot values plus inform slot values can be found in DB. </li>
+                    </ul>
+                  </li>
+                  
               <!-- </div>
             </div>
           </div>
       </div> -->
-      <br /> <br />
       <!-- <div class="row">
         <div class="col-md-12">
             <div class="infoCard">
@@ -465,7 +472,7 @@
 
                 <div class="infoHeadline">
                   <h3>Cross-lingual Multi-domain Dialog State Tracking Task</h3>
-
+                  <li>The evaluation test sets for both MultiWOZ and CrossWOZ are newly collected data. </li>
                   <li>The reported numbers are the average of evaluation results for the public test set and private test set.</li> 
                   <li>The joint accuracy for each test set is also listed.</li>
                   <br />
