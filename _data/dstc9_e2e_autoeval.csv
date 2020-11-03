@@ -9,4 +9,4 @@ Rank,TeamID,BestSpec,SuccessRate,CompleteRate,BookRate,InformPRF1,TurnSuccAll
 8,8,Submission1,52.6,66.9,66.7,57.5/80.7/64.8,13.2/22.5
 9,9,Submission1,44.4,50,26.5,57.9/64.5/58.9,12.2/14.6
 10,10,Submission4,21.4,40.7,0,55.4/60.0/54.1,11.0/25.9
-N/A, Baseline, Conversation Learner, 85, 92.4, 91.4, 79.3/94.9/84.5, 13.8/14.9,
+N/A, Baseline, Baseline, 85, 92.4, 91.4, 79.3/94.9/84.5, 13.8/14.9,
