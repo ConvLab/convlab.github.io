@@ -215,6 +215,37 @@
                       </tbody>
                     </table>
 
+                    <div class="infoHeadline">
+                      <h2>CrossWOZ Leaderboard (Updated Evaluation)</h2>
+                    </div>
+                    <table class="table borderless performance">
+                        <tbody>
+                          <tr>
+                            <th>Rank</th>
+                            <th>Team ID</th>
+                            <th>Best Spec #</th>
+                            <th>Joint Accuracy</th>
+                            <th>Slot Accuracy</th>
+                            <th>P/R/F1</th>
+                            <th>Joint Accuracy (public)</th>
+                            <th>Joint Accuracy (private)</th>
+                          </tr>
+                          {% for res in site.data.dstc9_dst_crosswoz_v2 %}
+                          <tr>
+                            <td>{{res.Rank}}  </td>
+                            <!-- <td> {{res.Team}} </td> -->
+                            <td> {{res.TeamID}} </td>
+                            <td> {{res.BestSpec}} </td>
+                            <td>{{res.JointAccuracy}}  </td>
+                            <td> {{res.SlotAccuracy}} </td>
+                            <td> {{res.PRF1}} </td>
+                            <td>{{res.JointAccuracyPublic}}  </td>
+                            <td>{{res.JointAccuracyPrivate}}  </td>
+                          <tr>
+                            {% endfor %}
+                        </tbody>
+                      </table>
+
               </div>
             </div>
           </div>
