@@ -1,0 +1,4 @@
+Rank,TeamID,BestSpec,JointAccuracy,SlotAccuracy,PRF1,JointAccuracyPublic,JointAccuracyPrivate
+1,2,Submission2,32.30,94.35,81.39/82.25/81.82,32.70,31.89
+2,1,Submission1,23.96,92.94,74.96/83.41/78.96,23.45,24.47
+3,3,Submission3,15.31,89.70,74.78/64.06/69.01,14.25,16.37
