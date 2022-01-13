@@ -1,0 +1,117 @@
+
+<header id='include_header'>
+
+  <title>{{ page.title }}</title>
+  <style>
+    img.half {
+      height: 14%;
+      width: 20%;
+      float: left;
+    }
+    img.half2 {
+      height: 7%;
+      width: 15%;
+      float: right;
+    }
+
+    .actionBtn {
+      display: block;
+      margin: 10px auto;
+      max-width: 350px;
+      width: 100%;
+      {% comment %} background-color: #014779; {% endcomment %}
+      {% comment %} background-color: rgb(2, 0, 19); {% endcomment %}
+      background: #00a3a3;
+      color: #fff !important;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 600;
+      {% comment %} border: 2px solid #003459; {% endcomment %}
+      border: 2px solid #00a3a3;
+      border-radius: 20px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    {% comment %} .actionBtn:hover {background:#003459;} {% endcomment %}
+    .actionBtn:hover {background:#003459;}
+
+    .actionBtn2 {
+      display: block;
+      margin: 10px auto;
+      max-width: 250px;
+      width: 100%;
+      {% comment %} background-color: #014779; {% endcomment %}
+      {% comment %} background-color: rgb(2, 0, 19); {% endcomment %}
+      background: rgb(0, 128, 128);
+      color: #fff !important;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      {% comment %} border: 2px solid #003459; {% endcomment %}
+      border: 1px solid rgb(0, 128, 128);
+      border-radius: 10px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    {% comment %} .actionBtn2:hover {background:#003459;} {% endcomment %}
+    .actionBtn2:hover {background:#003459;}
+
+  </style>
+  <!-- <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" /> -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/pygments.css" type="text/css" />
+    
+    <!-- <link rel="stylesheet" href="/assets/css/fb.css" type="text/css" /> -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/dialogzone.css" type="text/css" />
+
+    <script src="{{ site.url }}/assets/jquery/jquery.min.js"></script>
+    <script src="{{ site.url }}/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <!-- <div class="left"></div> -->
+        <!-- <div class="right"></div> -->
+      <!-- <div class='hh'> -->
+      <!-- </div> -->
+      <!--         <a class="navbar-brand" href="index.html">Microsoft Research</a>         -->
+      <!-- <div class='hh'> -->
+          <!-- <div class="half" style="float: right;"><img src="assets/images/msr_chop.png"  /></div> 
+          <div class="half" style="float: left;"><img src="assets/images/tsinghua_transparent.png" /></div> 
+       -->
+      <img class='half' src='assets/images/msr_transparent.png' alt="Microsoft Research">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="btn2 actionBtn2" onclick="location.href='index.html'" type="button">
+        DSTC9</button>
+      <button class="btn2 actionBtn2" onclick="location.href='about.html'" type="button">
+          DSTC8</button>
+      <img class='half2' src='assets/images/tsinghua_transparent.png' alt="Tsinghua University">
+      <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto"?>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"></a>
+          {% comment %} </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li> {% endcomment %} -->
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="https://blpeng1991.github.io/DialogueZoneDocs/">Tutorial</a>
+          </li>
+          -->
+          <!-- {% comment %} <li class="nav-item">
+            <a class="nav-link" href="https://blpeng1991.github.io/DialogueZoneDocs/">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="maito:">Contact</a>
+          </li> {% endcomment %} -->
+          
+        <!-- </ul>
+      </div> -->
+    </div>
+  </nav>
+</header>
+
+
+

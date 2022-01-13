@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+   
+<header id='include_header'>
+
+  <title>About | ConvLab</title>
+  <style>
+    img.half {
+      height: 14%;
+      width: 20%;
+      float: left;
+    }
+    img.half2 {
+      height: 7%;
+      width: 15%;
+      float: right;
+    }
+
+    .actionBtn {
+      display: block;
+      margin: 10px auto;
+      max-width: 350px;
+      width: 100%;
+      
+      
+      background: #00a3a3;
+      color: #fff !important;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 600;
+      
+      border: 2px solid #00a3a3;
+      border-radius: 20px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    
+    .actionBtn:hover {background:#003459;}
+
+    .actionBtn2 {
+      display: block;
+      margin: 10px auto;
+      max-width: 250px;
+      width: 100%;
+      
+      
+      background: rgb(0, 128, 128);
+      color: #fff !important;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      
+      border: 1px solid rgb(0, 128, 128);
+      border-radius: 10px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    
+    .actionBtn2:hover {background:#003459;}
+
+  </style>
+  <!-- <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" /> -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/pygments.css" type="text/css" />
+    
+    <!-- <link rel="stylesheet" href="/assets/css/fb.css" type="text/css" /> -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/dialogzone.css" type="text/css" />
+
+    <script src="http://localhost:4000/assets/jquery/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <!-- <div class="left"></div> -->
+        <!-- <div class="right"></div> -->
+      <!-- <div class='hh'> -->
+      <!-- </div> -->
+      <!--         <a class="navbar-brand" href="index.html">Microsoft Research</a>         -->
+      <!-- <div class='hh'> -->
+          <!-- <div class="half" style="float: right;"><img src="assets/images/msr_chop.png"  /></div> 
+          <div class="half" style="float: left;"><img src="assets/images/tsinghua_transparent.png" /></div> 
+       -->
+      <img class='half' src='assets/images/msr_transparent.png' alt="Microsoft Research">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="btn2 actionBtn2" onclick="location.href='index.html'" type="button">
+        DSTC9</button>
+      <button class="btn2 actionBtn2" onclick="location.href='about.html'" type="button">
+          DSTC8</button>
+      <img class='half2' src='assets/images/tsinghua_transparent.png' alt="Tsinghua University">
+      <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto"?>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"></a>
+           -->
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="https://blpeng1991.github.io/DialogueZoneDocs/">Tutorial</a>
+          </li>
+          -->
+          <!--  -->
+          
+        <!-- </ul>
+      </div> -->
+    </div>
+  </nav>
+</header>
+
+
+
+
+  <body>
+    <div class="topcover">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">      
+      <h1 id="appTitle"><font size='+8'> ConvLab</font> </h1>
+      <h2 id="appSubtitle"> <font size='+2'> DSTC8 Track 1: End-to-End Multi-Domain Dialog Challenge </font></h2>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="cover" id="contentCover">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="infoCard">
+          <div class="infoBody">
+            <div class="infoHeadline">
+              <h3><a href="https://github.com/ConvLab/ConvLab" style="color: #023b5c""> ConvLab </a></h3>
+              <p> ConvLab is an open-source multidomain end-to-end dialog system platform,
+                that enables researchers to quickly set up experiments with reusable components and compare a large set of different approaches, ranging from conventional pipeline systems to end-to-end neural models, in common environments. </p>
+            </div>
+            <button class="btn2 actionBtn" onclick="location.href='https://github.com/ConvLab/ConvLab'" type="button">
+              ConvLab GitHub</button>
+            <button class="btn2 actionBtn" onclick="location.href='https://arxiv.org/abs/1904.08637'" type="button">
+                ConvLab Paper</button>
+          </div>
+        </div>
+        
+      
+        <div class="infoCard">
+          <div class="infoBody">
+            <div class="infoHeadline">
+              <h3><a href="https://competitions.codalab.org/competitions/20162" style="color: #023b5c""> DSTC8 Track 1: End-to-End Multi-Domain Dialog Challenge </a></h3>
+              <p> As part of DSTC8, Microsoft Research and Tsinghua University are hosting a track intended to foster progress in building complex bots span over multiple sub-domains to accomplish a complex user goal.  To advance state-of-the-art technologies for handling complex dialogs, we offer a timely task focusing on multi-domain end-to-end task completion dialog in travel planning settings.</div>
+            <button class="btn2 actionBtn" onclick="location.href='https://competitions.codalab.org/competitions/20162'" type="button">
+              Dialog Challenge @ CodaLab </button>
+           <h5>Evaluation</h5>
+           <li>We report each team's best submission result based on success rate for both automatic evaluation and human evaluation. </li>
+           <li>Team Submission ID is the ID CodaLab provided when you made the submission.</li> 
+           <li>Human evaluation leaderboard is considered as the final ranking.</li>
+          
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBodyScroll">
+                <div class="infoHeadline">
+                  <h2>Human Evaluation Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <!-- <th>Team</th> -->
+                        <th>Team Submission ID</th>
+                        <th>Spec #</th>
+                        <th>Success Rate</th>
+                        <th>Language Understanding Score</th>
+                        <th>Response Appropriateness Score</th>
+                        <th>Turns</th>
+                      </tr>
+                      
+                      <tr>
+                        <td>1  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504430 </td>
+                        <td> submission4 </td>
+                        <td>68.32%  </td>
+                        <td> 4.149 </td>
+                        <td> 4.287 </td>
+                        <td> 19.507 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>2  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504429 </td>
+                        <td> submission1 </td>
+                        <td>65.81%  </td>
+                        <td> 3.538 </td>
+                        <td> 3.632 </td>
+                        <td> 15.481 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>3  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504563 </td>
+                        <td> submission2 </td>
+                        <td>65.09%  </td>
+                        <td> 3.538 </td>
+                        <td> 3.84 </td>
+                        <td> 13.884 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>4  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504651 </td>
+                        <td> submission1 </td>
+                        <td>64.10%  </td>
+                        <td> 3.547 </td>
+                        <td> 3.829 </td>
+                        <td> 16.906 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>5  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504641 </td>
+                        <td> submission2 </td>
+                        <td>62.91%  </td>
+                        <td> 3.742 </td>
+                        <td> 3.815 </td>
+                        <td> 14.968 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>6  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504569 </td>
+                        <td> submission4 </td>
+                        <td>54.90%  </td>
+                        <td> 3.784 </td>
+                        <td> 3.824 </td>
+                        <td> 14.107 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>7  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504529 </td>
+                        <td> submission1 </td>
+                        <td>43.56%  </td>
+                        <td> 3.554 </td>
+                        <td> 3.446 </td>
+                        <td> 21.818 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>8  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504582 </td>
+                        <td> submission2 </td>
+                        <td>36.45%  </td>
+                        <td> 2.944 </td>
+                        <td> 3.103 </td>
+                        <td> 21.128 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>9  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504666 </td>
+                        <td> submission1 </td>
+                        <td>25.77%  </td>
+                        <td> 2.072 </td>
+                        <td> 2.258 </td>
+                        <td> 16.8 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>10  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504502 </td>
+                        <td> submission2 </td>
+                        <td>23.30%  </td>
+                        <td> 2.612 </td>
+                        <td> 2.65 </td>
+                        <td> 15.333 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>11  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504524 </td>
+                        <td> submission1 </td>
+                        <td>18.81%  </td>
+                        <td> 1.99 </td>
+                        <td> 2.059 </td>
+                        <td> 16.105 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>N/A  </td>
+                        <!-- <td>  </td> -->
+                        <td> Baseline </td>
+                        <td> milu_rule_rule_template </td>
+                        <td>56.45%  </td>
+                        <td> 3.097 </td>
+                        <td> 3.556 </td>
+                        <td> 17.543 </td>
+                      <tr>
+                        
+                    </tbody>
+                  </table>
+
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBodyScroll">
+                <div class="infoHeadline">
+                  <h2>Automatic Evaluation Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <!-- <th>Team</th> -->
+                        <th>Team Submission ID</th>
+                        <th>Spec #</th>
+                        <th>Success Rate</th>
+                        <th>Return</th>
+                        <th>Turns</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th> F1</th>
+                        <th>Book Rate</th>
+                      </tr>
+                      
+                      <tr>
+                        <td>1  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504429 </td>
+                        <td> submission1 </td>
+                        <td>88.80%  </td>
+                        <td> 61.56 </td>
+                        <td> 7 </td>
+                        <td> 0.92 </td>
+                        <td>0.96  </td>
+                        <td> 0.93 </td>
+                        <td> 93.75% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>2  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504563 </td>
+                        <td> submission4 </td>
+                        <td>88.60%  </td>
+                        <td> 61.63 </td>
+                        <td> 6.69 </td>
+                        <td> 0.83 </td>
+                        <td>0.94  </td>
+                        <td> 0.87 </td>
+                        <td> 96.39% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>3  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504651 </td>
+                        <td> submission1 </td>
+                        <td>82.20%  </td>
+                        <td> 54.09 </td>
+                        <td> 6.55 </td>
+                        <td> 0.71 </td>
+                        <td>0.92  </td>
+                        <td> 0.78 </td>
+                        <td> 94.56% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>4  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504641 </td>
+                        <td> submission4 </td>
+                        <td>80.60%  </td>
+                        <td> 51.51 </td>
+                        <td> 7.21 </td>
+                        <td> 0.78 </td>
+                        <td>0.89  </td>
+                        <td> 0.81 </td>
+                        <td> 86.45% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>5  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504430 </td>
+                        <td> submission1 </td>
+                        <td>79.40%  </td>
+                        <td> 49.69 </td>
+                        <td> 7.59 </td>
+                        <td> 0.8 </td>
+                        <td>0.89  </td>
+                        <td> 0.83 </td>
+                        <td> 87.02% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>6  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504529 </td>
+                        <td> submission1 </td>
+                        <td>58.00%  </td>
+                        <td> 23.7 </td>
+                        <td> 7.9 </td>
+                        <td> 0.61 </td>
+                        <td>0.73  </td>
+                        <td> 0.64 </td>
+                        <td> 75.71% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>7  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504666 </td>
+                        <td> submission1 </td>
+                        <td>56.60%  </td>
+                        <td> 20.14 </td>
+                        <td> 9.78 </td>
+                        <td> 0.68 </td>
+                        <td>0.77  </td>
+                        <td> 0.7 </td>
+                        <td> 58.63% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>8  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504502 </td>
+                        <td> submission1 </td>
+                        <td>55.20%  </td>
+                        <td> 17.18 </td>
+                        <td> 11.06 </td>
+                        <td> 0.73 </td>
+                        <td>0.74  </td>
+                        <td> 0.71 </td>
+                        <td> 71.87% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>9  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504524 </td>
+                        <td> submission1 </td>
+                        <td>54.00%  </td>
+                        <td> 17.15 </td>
+                        <td> 9.65 </td>
+                        <td> 0.66 </td>
+                        <td>0.76  </td>
+                        <td> 0.69 </td>
+                        <td> 72.42% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>10  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504569 </td>
+                        <td> submission4 </td>
+                        <td>52.20%  </td>
+                        <td> 15.81 </td>
+                        <td> 8.83 </td>
+                        <td> 0.46 </td>
+                        <td>0.75  </td>
+                        <td> 0.54 </td>
+                        <td> 76.38% </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>11  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504582 </td>
+                        <td> submission2 </td>
+                        <td>34.80%  </td>
+                        <td> -6.39 </td>
+                        <td> 10.15 </td>
+                        <td> 0.65 </td>
+                        <td>0.75  </td>
+                        <td> 0.68 </td>
+                        <td> N/A </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>12  </td>
+                        <!-- <td>  </td> -->
+                        <td> 504632 </td>
+                        <td> submission1 </td>
+                        <td>0%  </td>
+                        <td> -58.88 </td>
+                        <td> 20.88 </td>
+                        <td> 0 </td>
+                        <td>0.01  </td>
+                        <td> 0 </td>
+                        <td> N/A </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>N/A  </td>
+                        <!-- <td>  </td> -->
+                        <td> Baseline </td>
+                        <td> milu_rule_rule_template </td>
+                        <td>63.40%  </td>
+                        <td> 30.41 </td>
+                        <td> 7.67 </td>
+                        <td> 0.72 </td>
+                        <td>0.83  </td>
+                        <td> 0.75 </td>
+                        <td> 86.37% </td>
+                      <tr>
+                        
+                    </tbody>
+                  </table>
+               <!--  -->
+
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  <footer class="site-footer h-card">
+<div class="cover" id='bottomconver'>
+  
+  <!-- <data class="u-url" href="/"></data> -->
+
+<!--   <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half"> -->
+    <!--    <font color='white'> Maintained by Microsoft Research, Deep Learning Group </font> -->
+        <!-- <ul class="contact-list">
+          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul> -->
+      <!-- </div> -->
+
+    <!-- </div> -->
+
+  <!-- </div> -->
+</div>
+</footer>
+
+</html>

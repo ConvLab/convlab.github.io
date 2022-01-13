@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+   
+<header id='include_header'>
+
+  <title></title>
+  <style>
+    img.half {
+      height: 14%;
+      width: 20%;
+      float: left;
+    }
+    img.half2 {
+      height: 7%;
+      width: 15%;
+      float: right;
+    }
+
+    .actionBtn {
+      display: block;
+      margin: 10px auto;
+      max-width: 350px;
+      width: 100%;
+      
+      
+      background: #00a3a3;
+      color: #fff !important;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 600;
+      
+      border: 2px solid #00a3a3;
+      border-radius: 20px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    
+    .actionBtn:hover {background:#003459;}
+
+    .actionBtn2 {
+      display: block;
+      margin: 10px auto;
+      max-width: 250px;
+      width: 100%;
+      
+      
+      background: rgb(0, 128, 128);
+      color: #fff !important;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      
+      border: 1px solid rgb(0, 128, 128);
+      border-radius: 10px;
+      transition: all 0.5s;
+      white-space: normal;
+    }
+    
+    .actionBtn2:hover {background:#003459;}
+
+  </style>
+  <!-- <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" /> -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/pygments.css" type="text/css" />
+    
+    <!-- <link rel="stylesheet" href="/assets/css/fb.css" type="text/css" /> -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/dialogzone.css" type="text/css" />
+
+    <script src="http://localhost:4000/assets/jquery/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <!-- <div class="left"></div> -->
+        <!-- <div class="right"></div> -->
+      <!-- <div class='hh'> -->
+      <!-- </div> -->
+      <!--         <a class="navbar-brand" href="index.html">Microsoft Research</a>         -->
+      <!-- <div class='hh'> -->
+          <!-- <div class="half" style="float: right;"><img src="assets/images/msr_chop.png"  /></div> 
+          <div class="half" style="float: left;"><img src="assets/images/tsinghua_transparent.png" /></div> 
+       -->
+      <img class='half' src='assets/images/msr_transparent.png' alt="Microsoft Research">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="btn2 actionBtn2" onclick="location.href='index.html'" type="button">
+        DSTC9</button>
+      <button class="btn2 actionBtn2" onclick="location.href='about.html'" type="button">
+          DSTC8</button>
+      <img class='half2' src='assets/images/tsinghua_transparent.png' alt="Tsinghua University">
+      <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto"?>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"></a>
+           -->
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="https://blpeng1991.github.io/DialogueZoneDocs/">Tutorial</a>
+          </li>
+          -->
+          <!--  -->
+          
+        <!-- </ul>
+      </div> -->
+    </div>
+  </nav>
+</header>
+
+
+
+
+  <body>
+    <div class="topcover">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="appTitle"><font size='+8'> ConvLab-2</font> </h1>
+      <h2 id="appSubtitle"> <font size='+2'> DSTC9 Track 2: Multi-domain Task-oriented Dialog Challenge II </font></h2>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="cover" id="contentCover">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="infoCard">
+          <div class="infoBody">
+            <div class="infoHeadline">
+              <h3><a href="https://github.com/ConvLab/ConvLab-2" style="color: #023b5c""> ConvLab-2 </a></h3>
+              <p> ConvLab-2 is an open-source toolkit that enables researchers to build task-oriented dialog systems with state-of-the-art models, perform an end-to-end evaluation, and diagnose the weakness of systems. As the successor of ConvLab, ConvLab-2 inherits ConvLab's framework but integrates more powerful dialog models and supports more datasets.            </div>
+            <button class="btn2 actionBtn" onclick="location.href='https://github.com/thu-coai/Convlab-2'" type="button">
+              ConvLab-2 Code</button>
+            <button class="btn2 actionBtn" onclick="location.href='https://arxiv.org/abs/2002.04793'" type="button">
+                ConvLab-2 Paper</button>
+          </div>
+        </div>
+        
+      
+        <div class="infoCard">
+          <div class="infoBody">
+            <div class="infoHeadline">
+              <h3><a href="https://github.com/ConvLab/ConvLab-2" style="color: #023b5c""> DSTC9 Track 2: Multi-domain Task-oriented Dialog Challenge II </a></h3>
+              <p> As part of DSTC9, Microsoft Research and Tsinghua University are hosting Multi-domain Task-oriented Dialog Challenge II, aiming to solve two tasks in the multi-domain task completion setting: 
+                 i) End-to-end Multi-domain Task Completion Dialog,
+                 ii) Cross-lingual Multi-domain Dialog State Tracking. </div>
+            <button class="btn2 actionBtn" onclick="location.href='https://github.com/ConvLab/ConvLab-2'" type="button">
+              Dialog Challenge Page </button>
+          
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBodyScroll">
+                <div class="infoHeadline">
+                  <h3>End-to-end Multi-domain Task Completion Dialog Task</h3>
+                  <br />
+                  <h2>Human Evaluation Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Team ID</th>
+                        <th>Best Spec #</th>
+                        <th>Average Success Rate</th>
+                        <th>Success Rate w/ DB Grounding</th>
+                        <th>Success Rate w/o DB Grounding</th>
+                        <th>Language Understanding Score</th>
+                        <th>Response Appropriateness Score</th>
+                        <th>Turns</th>
+                      </tr>
+                      
+                      <tr>
+                        <td>1  </td>
+                        <td> 1 </td>
+                        <td> Submission5 </td>
+                        <td>74.8  </td>
+                        <td>70.2  </td>
+                        <td>79.4  </td>
+                        <td> 4.54 </td>
+                        <td> 4.47 </td>
+                        <td> 18.5 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>1  </td>
+                        <td> 2 </td>
+                        <td> Submission1 </td>
+                        <td>74.8  </td>
+                        <td>68.8  </td>
+                        <td>80.8  </td>
+                        <td> 4.51 </td>
+                        <td> 4.45 </td>
+                        <td> 19.4 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>3  </td>
+                        <td> 7 </td>
+                        <td> Submission4 </td>
+                        <td>72.3  </td>
+                        <td>62  </td>
+                        <td>82.6  </td>
+                        <td> 4.53 </td>
+                        <td> 4.41 </td>
+                        <td> 17.1 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>4  </td>
+                        <td> 6 </td>
+                        <td> Submission1 </td>
+                        <td>70.6  </td>
+                        <td>60.8  </td>
+                        <td>80.4  </td>
+                        <td> 4.41 </td>
+                        <td> 4.41 </td>
+                        <td> 20.1 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>5  </td>
+                        <td> 3 </td>
+                        <td> Submission3 </td>
+                        <td>67.8  </td>
+                        <td>60  </td>
+                        <td>75.6  </td>
+                        <td> 4.56 </td>
+                        <td> 4.42 </td>
+                        <td> 21 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>6  </td>
+                        <td> 4 </td>
+                        <td> Submission2 </td>
+                        <td>60.3  </td>
+                        <td>51.4  </td>
+                        <td>69.2  </td>
+                        <td> 4.49 </td>
+                        <td> 4.22 </td>
+                        <td> 17.7 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>7  </td>
+                        <td> 5 </td>
+                        <td> Submission2 </td>
+                        <td>58.4  </td>
+                        <td>50.4  </td>
+                        <td>66.4  </td>
+                        <td> 4.15 </td>
+                        <td> 4.06 </td>
+                        <td> 19.7 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>8  </td>
+                        <td> 9 </td>
+                        <td> Submission1 </td>
+                        <td>55.2  </td>
+                        <td>43.2  </td>
+                        <td>67.2  </td>
+                        <td> 4.15 </td>
+                        <td> 3.98 </td>
+                        <td> 19.2 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>9  </td>
+                        <td> 8 </td>
+                        <td> Submission1 </td>
+                        <td>35  </td>
+                        <td>26  </td>
+                        <td>44  </td>
+                        <td> 3.27 </td>
+                        <td> 3.15 </td>
+                        <td> 18.5 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>10  </td>
+                        <td> 10 </td>
+                        <td> Submission4 </td>
+                        <td>19.5  </td>
+                        <td>6  </td>
+                        <td>33  </td>
+                        <td> 3.23 </td>
+                        <td> 2.93 </td>
+                        <td> 18.8 </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>N/A  </td>
+                        <td>  Baseline </td>
+                        <td>  Baseline </td>
+                        <td> 69.6   </td>
+                        <td>56.8  </td>
+                        <td> 82.4  </td>
+                        <td>  4.34 </td>
+                        <td>  4.18 </td>
+                        <td>  18.5 </td>
+                      <tr>
+                        
+                    </tbody>
+                  </table>
+                  <b> (Team 1 & Team 2 cochampion)</b>
+                  <li>Average Success = (Success Rate w/ DB Grounding + Success Rate w/o DB Grounding) / 2</li>
+                  <li>Success Rate w/o DB Grounding: Annotation provided by MTurkers (Success or Fail). They have no idea whether the provided values are consistent with DB.</li> 
+                  <li>Success Rate w/ DB Grounding: It is a success if and only if 
+                    <ul>
+                      <li> MTurkers mark the dialog as `Success` </li>
+                      <li>The provided `request` slot values plus inform slot values can be found in DB. </li>
+                    </ul>
+                  </li>
+                  
+              <!-- </div>
+            </div>
+          </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBodyScroll"> -->
+                <div class="infoHeadline">
+                  <h2>Automatic Evaluation Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <!-- <th>Team</th> -->
+                        <th>Team ID</th>
+                        <th>Best Spec #</th>
+                        <th>Success Rate</th>
+                        <th>Complete Rate</th>
+                        <th>Book Rate</th>
+                        <th>Inform P/R/F1</th>
+                        <th>Turn(succ/all)</th>
+                      </tr>
+                      
+                      <tr>
+                        <td>1  </td>
+                        <!-- <td>  </td> -->
+                        <td> 1 </td>
+                        <td> Submission3 </td>
+                        <td>93  </td>
+                        <td> 95.2 </td>
+                        <td> 94.6 </td>
+                        <td> 84.1/96.2/88.1 </td>
+                        <td>12.5/12.7  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>2  </td>
+                        <!-- <td>  </td> -->
+                        <td> 2 </td>
+                        <td> Submission5 </td>
+                        <td>91.4  </td>
+                        <td> 96.9 </td>
+                        <td> 96.2 </td>
+                        <td> 80.2/97.3/86.0 </td>
+                        <td>15.3/15.7  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>3  </td>
+                        <!-- <td>  </td> -->
+                        <td> 3 </td>
+                        <td> Submission1 </td>
+                        <td>90.8  </td>
+                        <td> 94.4 </td>
+                        <td> 96.7 </td>
+                        <td> 81.0/95.4/85.9 </td>
+                        <td>13.4/13.6  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>4  </td>
+                        <!-- <td>  </td> -->
+                        <td> 4 </td>
+                        <td> Submission2 </td>
+                        <td>89.8  </td>
+                        <td> 94.6 </td>
+                        <td> 96.3 </td>
+                        <td> 72.4/96.0/80.1 </td>
+                        <td>15.1/15.8  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>5  </td>
+                        <!-- <td>  </td> -->
+                        <td> 5 </td>
+                        <td> Submission2 </td>
+                        <td>83.3  </td>
+                        <td> 88.5 </td>
+                        <td> 89.1 </td>
+                        <td> 81.1/90.3/83.5 </td>
+                        <td>13.5/13.8  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>6  </td>
+                        <!-- <td>  </td> -->
+                        <td> 6 </td>
+                        <td> Submission1 </td>
+                        <td>67.7  </td>
+                        <td> 88.5 </td>
+                        <td> 90.8 </td>
+                        <td> 70.4/85.6/75.2 </td>
+                        <td>12.8/14.2  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>7  </td>
+                        <!-- <td>  </td> -->
+                        <td> 7 </td>
+                        <td> Submission4 </td>
+                        <td>57.8  </td>
+                        <td> 87.1 </td>
+                        <td> 85 </td>
+                        <td> 68.7/81.6/72.6 </td>
+                        <td>13.7/16.4  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>8  </td>
+                        <!-- <td>  </td> -->
+                        <td> 8 </td>
+                        <td> Submission1 </td>
+                        <td>52.6  </td>
+                        <td> 66.9 </td>
+                        <td> 66.7 </td>
+                        <td> 57.5/80.7/64.8 </td>
+                        <td>13.2/22.5  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>9  </td>
+                        <!-- <td>  </td> -->
+                        <td> 9 </td>
+                        <td> Submission1 </td>
+                        <td>44.4  </td>
+                        <td> 50 </td>
+                        <td> 26.5 </td>
+                        <td> 57.9/64.5/58.9 </td>
+                        <td>12.2/14.6  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>10  </td>
+                        <!-- <td>  </td> -->
+                        <td> 10 </td>
+                        <td> Submission4 </td>
+                        <td>21.4  </td>
+                        <td> 40.7 </td>
+                        <td> 0 </td>
+                        <td> 55.4/60.0/54.1 </td>
+                        <td>11.0/25.9  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>N/A  </td>
+                        <!-- <td>  </td> -->
+                        <td>  Baseline </td>
+                        <td>  Baseline </td>
+                        <td> 85  </td>
+                        <td>  92.4 </td>
+                        <td>  91.4 </td>
+                        <td>  79.3/94.9/84.5 </td>
+                        <td> 13.8/14.9  </td>
+                      <tr>
+                        
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBodyScroll">
+
+                <div class="infoHeadline">
+                  <h3>Cross-lingual Multi-domain Dialog State Tracking Task</h3>
+                  <li>The evaluation test sets for both MultiWOZ and CrossWOZ are newly collected data. </li>
+                  <li>The reported numbers are the average of evaluation results for the public test set and private test set.</li> 
+                  <li>The joint accuracy for each test set is also listed.</li>
+                  <br />
+
+                  <h2>MultiWOZ Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                    <tbody>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Team ID</th>
+                        <th>Best Spec #</th>
+                        <th>Joint Accuracy</th>
+                        <th>Slot Accuracy</th>
+                        <th>P/R/F1</th>
+                        <th>Joint Accuracy (public)</th>
+                        <th>Joint Accuracy (private)</th>
+                      </tr>
+                      
+                      <tr>
+                        <td>1  </td>
+                        <!-- <td>  </td> -->
+                        <td> 1 </td>
+                        <td> Submission1 </td>
+                        <td>62.37  </td>
+                        <td> 98.09 </td>
+                        <td> 92.15/94.02/93.07 </td>
+                        <td>62.70  </td>
+                        <td>62.03  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>2  </td>
+                        <!-- <td>  </td> -->
+                        <td> 2 </td>
+                        <td> Submission2 </td>
+                        <td>62.08  </td>
+                        <td> 98.10 </td>
+                        <td> 90.61/96.20/93.32 </td>
+                        <td>63.25  </td>
+                        <td>60.91  </td>
+                      <tr>
+                        
+                      <tr>
+                        <td>3  </td>
+                        <!-- <td>  </td> -->
+                        <td> 3 </td>
+                        <td> Submission3 </td>
+                        <td>30.13  </td>
+                        <td> 94.40 </td>
+                        <td> 87.07/74.67/80.40 </td>
+                        <td>30.53  </td>
+                        <td>29.72  </td>
+                      <tr>
+                        
+                    </tbody>
+                  </table>
+                  <br />
+
+
+                  <div class="infoHeadline">
+                    <h2>CrossWOZ Leaderboard</h2>
+                  </div>
+                  <table class="table borderless performance">
+                      <tbody>
+                        <tr>
+                          <th>Rank</th>
+                          <th>Team ID</th>
+                          <th>Best Spec #</th>
+                          <th>Joint Accuracy</th>
+                          <th>Slot Accuracy</th>
+                          <th>P/R/F1</th>
+                          <th>Joint Accuracy (public)</th>
+                          <th>Joint Accuracy (private)</th>
+                        </tr>
+                        
+                        <tr>
+                          <td>1  </td>
+                          <!-- <td>  </td> -->
+                          <td> 3 </td>
+                          <td> Submission3 </td>
+                          <td>16.86  </td>
+                          <td> 89.11 </td>
+                          <td> 68.26/62.85/65.45 </td>
+                          <td>16.82  </td>
+                          <td>16.89  </td>
+                        <tr>
+                          
+                        <tr>
+                          <td>2  </td>
+                          <!-- <td>  </td> -->
+                          <td> 1 </td>
+                          <td> Submission1 </td>
+                          <td>15.28  </td>
+                          <td> 90.37 </td>
+                          <td> 65.94/78.87/71.82 </td>
+                          <td>15.19  </td>
+                          <td>15.37  </td>
+                        <tr>
+                          
+                        <tr>
+                          <td>3  </td>
+                          <!-- <td>  </td> -->
+                          <td> 2 </td>
+                          <td> Submission2 </td>
+                          <td>13.99  </td>
+                          <td> 91.92 </td>
+                          <td> 72.63/78.90/75.64 </td>
+                          <td>14.41  </td>
+                          <td>13.58  </td>
+                        <tr>
+                          
+                      </tbody>
+                    </table>
+
+                    <div class="infoHeadline">
+                      <h2>CrossWOZ Leaderboard (Updated Evaluation)</h2>
+                       (Candidate lists from selectedResults are used to correct name labels. Please check <a href="https://github.com/ConvLab/ConvLab-2" style="color: #0381ca""> the competition description page</a> and
+                      <a href="https://github.com/thu-coai/Convlab-2" style="color: #0381ca""> ConvLab-2 codebase</a> for details.) 
+                    </div>
+                    <table class="table borderless performance">
+                        <tbody>
+                          <tr>
+                            <th>Rank</th>
+                            <th>Team ID</th>
+                            <th>Best Spec #</th>
+                            <th>Joint Accuracy</th>
+                            <th>Slot Accuracy</th>
+                            <th>P/R/F1</th>
+                            <th>Joint Accuracy (public)</th>
+                            <th>Joint Accuracy (private)</th>
+                          </tr>
+                          
+                          <tr>
+                            <td>1  </td>
+                            <!-- <td>  </td> -->
+                            <td> 2 </td>
+                            <td> Submission2 </td>
+                            <td>32.30  </td>
+                            <td> 94.35 </td>
+                            <td> 81.39/82.25/81.82 </td>
+                            <td>32.70  </td>
+                            <td>31.89  </td>
+                          <tr>
+                            
+                          <tr>
+                            <td>2  </td>
+                            <!-- <td>  </td> -->
+                            <td> 1 </td>
+                            <td> Submission1 </td>
+                            <td>23.96  </td>
+                            <td> 92.94 </td>
+                            <td> 74.96/83.41/78.96 </td>
+                            <td>23.45  </td>
+                            <td>24.47  </td>
+                          <tr>
+                            
+                          <tr>
+                            <td>3  </td>
+                            <!-- <td>  </td> -->
+                            <td> 3 </td>
+                            <td> Submission3 </td>
+                            <td>15.31  </td>
+                            <td> 89.70 </td>
+                            <td> 74.78/64.06/69.01 </td>
+                            <td>14.25  </td>
+                            <td>16.37  </td>
+                          <tr>
+                            
+                        </tbody>
+                      </table>
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+    </div>
+    </div>
+  </body>
+  <footer class="site-footer h-card">
+<div class="cover" id='bottomconver'>
+  
+  <!-- <data class="u-url" href="/"></data> -->
+
+<!--   <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half"> -->
+    <!--    <font color='white'> Maintained by Microsoft Research, Deep Learning Group </font> -->
+        <!-- <ul class="contact-list">
+          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul> -->
+      <!-- </div> -->
+
+    <!-- </div> -->
+
+  <!-- </div> -->
+</div>
+</footer>
+
+</html>
